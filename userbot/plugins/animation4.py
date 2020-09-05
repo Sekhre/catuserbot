@@ -47,13 +47,13 @@ async def _(event):
     await event.edit(f"**Ready Commando **__[{DEF}]({USR})....")
     animation_chars = [
         "Ｆｉｉｉｉｉｒｅ",
-        f"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n <,︻╦╤─ ҉ - \n _/﹋\_\n",
-        f"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n  <,︻╦╤─ ҉ - -\n _/﹋\_\n",
-        f"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n <,︻╦╤─ ҉ - - -\n _/﹋\_\n",
-        f"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n<,︻╦╤─ ҉ - -\n _/﹋\_\n",
-        f"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n <,︻╦╤─ ҉ - \n _/﹋\_\n",
-        f"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n  <,︻╦╤─ ҉ - -\n _/﹋\_\n",
-        f"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n <,︻╦╤─ ҉ - - - {name}\n _/﹋\_\n",
+        rf"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n <,︻╦╤─ ҉ - \n _/﹋\_\n",
+        rf"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n  <,︻╦╤─ ҉ - -\n _/﹋\_\n",
+        rf"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n <,︻╦╤─ ҉ - - -\n _/﹋\_\n",
+        rf"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n<,︻╦╤─ ҉ - -\n _/﹋\_\n",
+        rf"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n <,︻╦╤─ ҉ - \n _/﹋\_\n",
+        rf"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n  <,︻╦╤─ ҉ - -\n _/﹋\_\n",
+        rf"__**Commando **__[{DEF}]({USR})          \n\n_/﹋\_\n (҂`_´)\n <,︻╦╤─ ҉ - - - {name}\n _/﹋\_\n",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
@@ -394,7 +394,7 @@ async def _(event):
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 30])
-        
+
 
 @borg.on(admin_cmd(pattern=f"security$", outgoing=True))
 async def _(event):
@@ -442,6 +442,7 @@ async def _(event):
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 11])
+
 
 @borg.on(admin_cmd(pattern=f"music$", outgoing=True))
 async def _(event):
