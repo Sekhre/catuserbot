@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Jisan09/catuserbot/",
+  "repository": "https://github.com/sekhre/catuserbot/",
   "website": "#TODO",
   "success_url": "#TODO",
   "stack": "container",
@@ -24,7 +24,7 @@
       "required": false
     },
     "ALIVE_NAME": {
-      "description": "give your name, like Jisan",
+      "description": "give your name, like Sekhre",
       "value": ""
     },
     "APP_ID": {
@@ -36,7 +36,7 @@
       "value": ""
     },
     "LIVE_USERNAME": {
-      "description": "give your tg username, like @Jisan7509",
+      "description": "give your tg username, like @Sekaru_kun",
       "value": ""
     },
     "STRING_SESSION": {
